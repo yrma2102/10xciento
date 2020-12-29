@@ -9,14 +9,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/diplodevops/ejemploPipe.git'
+                // some
+            }
+        }
 
-                // Run Maven on a Unix agent.
-                sh "mvn test"
+        stage('test') {
+            steps {
+                // some
+            }
+        }
 
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+        stage('test2') {
+            steps {
+                // some
             }
         }
     }
