@@ -1,7 +1,5 @@
 package ejemplopipeline;
 
-import java.io.Console;
-
 public class Diezxciento {
 	
 	public int ahorro;
