@@ -1,5 +1,7 @@
 package ejemplopipeline;
 
+import java.io.Console;
+
 public class Diezxciento {
 	
 	public int ahorro;
@@ -21,8 +23,19 @@ public class Diezxciento {
 		return (int) diezxciento;
 	}
 	
-	public int impuesto(){
-		return 0;
+	public Float impuesto(int sueldo){
+		Integer sueldoAnual = sueldo*12;
+		
+		float inpuesto = 0.0f;
+		if (sueldoAnual > 17864280 && (sueldoAnual < 29773800)){
+			inpuesto =  0.08f;
+		}else if(sueldoAnual > 29700000 && (sueldoAnual < 41600000)){
+			inpuesto = 0.135f;
+		}
+		
+		System.out.println("Sueldo Anual: "+sueldoAnual); 
+		System.out.println("Inpuesto"+inpuesto); 
+		return inpuesto;
 	}
 	
 	public int saldoAhorro() {
